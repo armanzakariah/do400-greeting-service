@@ -27,7 +27,7 @@ pipeline{
 			oc project nsbbey-greetings
 			oc start-build greeting-service --follow --wait
 		'''
-		}	
+			
 	}
     }
 }
