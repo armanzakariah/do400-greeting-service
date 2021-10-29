@@ -23,11 +23,12 @@ pipeline{
 
         // Add the "Deploy" stage here
 	stage("Deploy"){
+		steps {
 		sh '''
 			oc project nsbbey-greetings
 			oc start-build greeting-service --follow --wait
 		'''
-			
+		}
 	}
     }
 }
